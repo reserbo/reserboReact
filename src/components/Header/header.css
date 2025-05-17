@@ -1,0 +1,124 @@
+header {
+    padding: var(--size9);
+    position: fixed;
+    width: 100vw;
+    height: var(--headerHeight);
+    box-sizing: border-box;
+    z-index: 1000;
+    background-color: var(--backgroundColor);
+    overflow: visible;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+    height: var(--size6);
+    border-radius: 5rem;
+    background-color: var(--mainContainerColor);
+    overflow: hidden;
+}
+
+nav a {
+    height: var(--size7);
+    margin: var(--size6minus7by2);
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column;
+    margin: var(--size6minus7by2) var(--size8) var(--size6minus7by2) 0;
+    gap: 0;
+}
+
+nav ul div{
+    display: flex;
+    flex-flow: row nowrap;
+    height: var(--size7);
+    align-items: center;
+    justify-content: end;
+    gap: var(--size9);
+}
+
+nav button {
+    height: var(--size8);
+    background-color: transparent;
+}
+
+nav ul li {
+    justify-items: end;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    transition: opacity 0.2s ease-in-out 0.2s;
+}
+
+nav ul a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    font-family: var(--mainFont);
+    color: var(--white);
+    font-size: var(--size9);
+    font-weight: 400;
+}
+
+header.showHeaderList nav{
+    border-radius: 2.5rem;
+    height: var(--size4);
+    transition: border-radius 0.2s ease-in-out, height 0.2s ease-in-out 0.2s;
+}
+
+header.showHeaderList ul {
+    gap: var(--size10);
+}
+
+header.showHeaderList ul li {
+    height: 100%;
+    width: auto;
+    opacity: 1;
+}
+
+header:not(.showHeaderList) nav {
+    transition: border-radius 0.2s ease-in-out 0.2s, height 0.2s ease-in-out;
+}
+
+header:not(.showHeaderList) ul li {
+    transition: none;
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media (max-aspect-ratio: 7/8) {
+
+    header {
+        padding: var(--size10);
+    }
+
+    nav {
+        height: var(--size7);
+    }
+
+    nav a {
+        height: var(--size8);
+        margin: var(--size7minus8by2);
+    }
+
+    nav ul {
+        height: var(--size8);
+        margin: var(--size7minus8by2) var(--size9) var(--size7minus8by2) 0;
+    }
+
+    nav ul div {
+        gap: var(--size10);
+    }
+
+    header.showHeaderList nav{
+        border-radius: 1.5rem;
+        height: var(--size6by2);
+    }
+
+}

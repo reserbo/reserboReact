@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./src/assets/fonts/interRegular.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./src/assets/fonts/interItalic.woff2') format('woff2');
+  font-style: italic;
+}
+
+/* -- ROOT VARIABLES -- */
+
+:root {
+  /* -- sizes -- */
+  --phi: 1.61803398875;
+  --size1: 100vh;
+  --size2: calc(var(--size1) / var(--phi));
+  --size3: calc(var(--size2) / var(--phi));
+  --size4: calc(var(--size3) / var(--phi));
+  --size5: calc(var(--size4) / var(--phi));
+  --size6: calc(var(--size5) / var(--phi));
+  --size7: calc(var(--size6) / var(--phi));
+  --size8: calc(var(--size7) / var(--phi));
+  --size9: calc(var(--size8) / var(--phi));
+  --size10: calc(var(--size9) / var(--phi));
+  --size11: calc(var(--size10) / var(--phi));
+  --size12: calc(var(--size11) / var(--phi));
+  --size13: calc(var(--size12) / var(--phi));
+  --size14: calc(var(--size13) / var(--phi));
+  --size3by2: calc(var(--size3) * 2);
+  --size5by3: calc(var(--size5) * 3);
+  --size6by2: calc(var(--size6) * 2);
+  --size6minus7by2: calc((var(--size6) - var(--size7)) / 2);
+  --size7minus8by2: calc((var(--size7) - var(--size8)) / 2);
+  --headerHeight: calc(var(--size6) + (var(--size9) * 2));
+  --indexFiltersHeight: calc(var(--size14) + (var(--size8)));
+
+  --text1: 1rem;
+  --text2: calc(var(--text1) * var(--phi));
+  --text3: calc(var(--text2) * var(--phi));
+  --text4: calc(var(--text3) * var(--phi));
+  --text5: calc(var(--text4) * var(--phi));
+
+  /* -- colors -- */
+  --black: #111111;
+  --white: #FAF9F6;
+  --yellow: #FFD73A;
+  --grey: #919191;
+  --backgroundColor: var(--white);
+  --mainContainerColor: var(--black);
+  --secondaryContainerColor: var(--yellow);
+  --shadowColor: rgba(145, 145, 145, 0.40);
+
+  /* -- fonts -- */
+  --mainFont: 'Inter', sans-serif;
+}
+
+/* -- GENERAL -- */
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+main {
+  box-sizing: border-box;
+  padding-top: var(--headerHeight);
+}
+
+img {
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+svg {
+  height: 100%;
+  width: auto;
+  overflow: visible;
+}
+
+h1 {
+  font-family: var(--mainFont);
+  color: var(--mainContainerColor);
+  font-size: var(--text4);
+  font-weight: 600;
+}
+
+h2 {
+  font-family: var(--mainFont);
+  color: var(--mainContainerColor);
+  font-size: var(--text3);
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--mainFont);
+  color: var(--mainContainerColor);
+  font-size: var(--text2);
+  font-weight: 600;
+}
+
+h4 {
+  font-family: var(--mainFont);
+  color: var(--mainContainerColor);
+  font-size: var(--text1);
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--mainFont);
+  color: var(--mainContainerColor);
+  font-size: var(--text1);
+  font-weight: 400;
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media (max-aspect-ratio: 7/8) {
+
+  /* -- MOBILE ROOT VARIABLES -- */
+
+  :root {
+      --headerHeight: calc(var(--size7) + (var(--size10) * 2));
+      --text1: 0.875rem;
+  }
+
+}
