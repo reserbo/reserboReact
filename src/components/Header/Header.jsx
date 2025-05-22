@@ -28,6 +28,9 @@ function Header() {
                         </button>
                     </div>
                     <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
                         <a href="cartelera.html">Cartelera</a>
                     </li>
                     <li>

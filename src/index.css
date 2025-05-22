@@ -124,6 +124,11 @@ p {
   font-weight: 400;
 }
 
+.index {
+  box-sizing: border-box;
+  padding-top: var(--headerHeight);
+}
+
 /* -- MEDIA QUERIES -- */
 
 @media (max-aspect-ratio: 7/8) {

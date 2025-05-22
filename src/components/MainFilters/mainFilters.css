@@ -1,0 +1,59 @@
+.MainFilters {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-evenly;
+    padding: 0 var(--size8) var(--size14) var(--size8);
+    height: var(--size8);
+    gap: var(--size9);
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+    background-color: var(--backgroundColor);
+    width: 100vw;
+    box-shadow: 0px var(--size14) var(--size10) var(--shadowColor);
+}
+
+.MainFilters button{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: var(--size13) solid transparent;
+    padding-bottom: var(--size11);
+    gap: var(--size10);
+    background-color: transparent;
+    font-family: var(--mainFont);
+    color: var(--grey);
+    font-size: var(--size9);
+    font-weight: 400;
+}
+
+.MainFilters p {
+    color: var(--grey)
+}
+
+.MainFilters button.indexhighlitedFilter{
+    border-bottom: var(--size13) solid var(--mainContainerColor);
+    color: var(--black);
+}
+
+.MainFilters button.indexhighlitedFilter p {
+    color: var(--mainContainerColor);
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media (max-aspect-ratio: 7/8) {
+    .MainFilters {
+        height: var(--size8);
+        gap: var(--size13);
+        padding: 0 var(--size9) var(--size14) var(--size9);
+    }
+
+    .MainFilters button{
+        padding-bottom: var(--size12);
+    }
+}
