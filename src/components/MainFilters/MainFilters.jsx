@@ -14,7 +14,7 @@ function MainFilters() {
 
     return (
     <>
-        <div class = "MainFilters">
+        <section class = "mainFilters">
             <button className={activeFilter === 'eventos' ? 'indexhighlitedFilter' : ''} onClick={() => handleFilterClick('eventos')}>
                 <img src={activeFilter === 'eventos' ? ticketIconBlack : ticketIconOutlineGrey} alt="Ícono de evento"/>
                 <p>Eventos</p>
@@ -23,7 +23,7 @@ function MainFilters() {
                 <img src={activeFilter === 'lugares' ? storeFrontIconBlack : storeFrontIconOutlineGrey} alt="Ícono de lugar"/>
                 <p>Lugares</p>
             </button>
-        </div>
+        </section>
     </>
     )
 }

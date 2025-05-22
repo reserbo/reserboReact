@@ -1,4 +1,4 @@
-.MainFilters {
+.mainFilters {
     display: flex;
     flex-flow: row nowrap;
     justify-content:space-evenly;
@@ -14,7 +14,7 @@
     box-shadow: 0px var(--size14) var(--size10) var(--shadowColor);
 }
 
-.MainFilters button{
+.mainFilters button{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -31,29 +31,29 @@
     font-weight: 400;
 }
 
-.MainFilters p {
+.mainFilters p {
     color: var(--grey)
 }
 
-.MainFilters button.indexhighlitedFilter{
+.mainFilters button.indexhighlitedFilter{
     border-bottom: var(--size13) solid var(--mainContainerColor);
     color: var(--black);
 }
 
-.MainFilters button.indexhighlitedFilter p {
+.mainFilters button.indexhighlitedFilter p {
     color: var(--mainContainerColor);
 }
 
 /* -- MEDIA QUERIES -- */
 
 @media (max-aspect-ratio: 7/8) {
-    .MainFilters {
+    .mainFilters {
         height: var(--size8);
         gap: var(--size13);
         padding: 0 var(--size9) var(--size14) var(--size9);
     }
 
-    .MainFilters button{
+    .mainFilters button{
         padding-bottom: var(--size12);
     }
 }

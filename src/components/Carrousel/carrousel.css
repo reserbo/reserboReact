@@ -1,0 +1,89 @@
+.carrousel {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: var(--size9) 0;
+    box-sizing: border-box;
+    align-items: start;
+    justify-content: center;
+    margin-top: var(--size8);
+    height: fit-content;
+    gap: var(--size10);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.carrousel h2 {
+    padding: 0 var(--size9);
+    box-sizing: border-box;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.carrousel ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: fit-content;
+    padding: 0 var(--size8);
+    box-sizing: border-box;
+    gap: var(--size8);
+}
+
+.carrousel ul li {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: var(--size13);
+    height: 100%;
+}
+
+.carrousel ul li img {
+    height: var(--size4);
+    width: var(--size4);
+    border-radius: .3rem;
+}
+
+.carrousel a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: end;
+    padding: 0 var(--size9);
+    margin-top: var(--size11);
+    box-sizing: border-box;
+    height: var(--size9);
+    width: 100%;
+    gap: var(--size11);
+    font-family: var(--mainFont);
+    color: var(--mainContainerColor);
+    font-size: var(--text1);
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+@media (max-aspect-ratio: 7/8) {
+
+    .carrousel {
+        padding: var(--size10) 0;
+    }
+
+    .carrousel h2{
+        padding: 0 var(--size10);
+    }
+
+    .carrousel ul{
+        padding: 0 var(--size9);
+    }
+
+    .carrousel a {
+        padding: 0 var(--size10);
+    }
+
+}
