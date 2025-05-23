@@ -43,7 +43,7 @@
   --size6by2: calc(var(--size6) * 2);
   --size6minus7by2: calc((var(--size6) - var(--size7)) / 2);
   --size7minus8by2: calc((var(--size7) - var(--size8)) / 2);
-  --headerHeight: calc(var(--size6) + (var(--size9) * 2));
+  --headerHeight: calc(var(--size7) + (var(--size10) * 2));
   --indexFiltersHeight: calc(var(--size14) + (var(--size8)));
 
   --text1: 1rem;
@@ -131,7 +131,6 @@ p {
   /* -- MOBILE ROOT VARIABLES -- */
 
   :root {
-      --headerHeight: calc(var(--size7) + (var(--size10) * 2));
       --text1: 0.875rem;
   }
 

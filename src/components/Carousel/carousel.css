@@ -1,4 +1,4 @@
-.carrousel {
+.carousel {
     display: flex;
     flex-flow: column nowrap;
     padding: var(--size9) 0;
@@ -13,7 +13,7 @@
     scrollbar-width: none;
 }
 
-.carrousel h2 {
+.carousel h2 {
     padding: 0 var(--size9);
     box-sizing: border-box;
     width: 100%;
@@ -22,7 +22,7 @@
     left: 0;
 }
 
-.carrousel ul {
+.carousel ul {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -34,7 +34,7 @@
     gap: var(--size8);
 }
 
-.carrousel ul li {
+.carousel ul li {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -42,13 +42,13 @@
     height: 100%;
 }
 
-.carrousel ul li img {
+.carousel ul li img {
     height: var(--size4);
     width: var(--size4);
     border-radius: .3rem;
 }
 
-.carrousel a {
+.carousel a {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -70,19 +70,19 @@
 
 @media (max-aspect-ratio: 7/8) {
 
-    .carrousel {
+    .carousel {
         padding: var(--size10) 0;
     }
 
-    .carrousel h2{
+    .carousel h2{
         padding: 0 var(--size10);
     }
 
-    .carrousel ul{
+    .carousel ul{
         padding: 0 var(--size9);
     }
 
-    .carrousel a {
+    .carousel a {
         padding: 0 var(--size10);
     }
 

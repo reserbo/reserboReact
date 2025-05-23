@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46666"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="reserbologo.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="reserboFavicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.31269672"
+     inkscape:cx="697.16113"
+     inkscape:cy="516.47488"
+     inkscape:window-width="1472"
+     inkscape:window-height="840"
+     inkscape:window-x="227"
+     inkscape:window-y="1118"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g1"
+     inkscape:export-bgcolor="#ffffff00" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1"
+       transform="matrix(2.4186815,0,0,2.4186815,159.34576,-175.34435)"
+       inkscape:export-filename="reserbologo.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
+      <g
+         id="g3"
+         transform="matrix(0.82805611,0,0,0.82805611,-46.251825,12.465221)">
+        <ellipse
+           style="fill:#111111;stroke:none;stroke-width:0.517224"
+           id="path3"
+           cx="10.113822"
+           cy="106.31509"
+           rx="33.819248"
+           ry="33.819252" />
+        <path
+           id="path24-2-9-9-8-8"
+           style="font-variation-settings:'wght' 600;fill:#ffd73a;fill-opacity:1;stroke-width:2.16099"
+           d="M 10.111749,78.967193 A 27.347865,27.347847 0 0 0 -17.234067,106.31299 27.347865,27.347847 0 0 0 10.111749,133.66298 27.347865,27.347847 0 0 0 37.46171,106.31299 27.347865,27.347847 0 0 0 10.111749,78.967193 Z m 0,10.437746 v 0.0043 a 16.904432,16.904432 0 0 1 2.207434,0.155952 16.904432,16.904432 0 0 1 2.160949,0.443514 l -1.675554,6.25082 a 10.44664,10.44664 0 0 0 -1.245132,-0.27034 10.44664,10.44664 0 0 0 -1.447697,-0.12658 10.44664,10.44664 0 0 0 -10.28574678,8.635515 10.44664,10.44664 0 0 0 -0.160056,1.81064 v 0.004 13.2276 0.009 a 16.904432,16.904432 0 0 1 -6.45764322,-13.23609 16.904432,16.904432 0 0 0 0,-0.004 16.904432,16.904432 0 0 1 16.9039,-16.903818 z m 10.446169,3.667786 a 16.904432,16.904432 0 0 1 6.457644,13.240265 16.904432,16.904432 0 0 1 -16.903813,16.90805 16.904432,16.904432 0 0 1 -2.2031767,-0.16005 16.904432,16.904432 0 0 1 -2.169462,-0.4435 l 1.679811,-6.25084 a 10.44664,10.44664 0 0 0 1.283105,0.27034 10.44664,10.44664 0 0 0 1.4097227,0.12658 10.44664,10.44664 0 0 0 10.446169,-10.45034 V 93.085625 Z" />
+      </g>
+    </g>
+  </g>
+</svg>

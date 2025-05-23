@@ -1,0 +1,30 @@
+[
+    {
+        "key": 1,
+        "articleImg": null,
+        "articleName": "DELEITE",
+        "articleMiniDescription": "LIVE CULTUR",
+        "articleDetails": "5 de julio"
+    },
+    {
+        "key": 2,
+        "articleImg": null,
+        "articleName": "Cromática",
+        "articleMiniDescription": "FESTA events",
+        "articleDetails": "3 de marzo"
+    },
+    {
+        "key": 3,
+        "articleImg": null,
+        "articleName": "Primavera Flow",
+        "articleMiniDescription": "Fiesta en cincodoce",
+        "articleDetails": "15 de marzo"
+    },
+    {
+        "key": 4,
+        "articleImg": null,
+        "articleName": "Primavera Flow",
+        "articleMiniDescription": "Fiesta en cincodoce",
+        "articleDetails": "15 de marzo"
+    }
+]

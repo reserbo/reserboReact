@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content:space-evenly;
-    padding: 0 var(--size8) var(--size14) var(--size8);
+    padding: var(--size14) var(--size8) var(--size14) var(--size8);
     height: var(--size8);
     gap: var(--size9);
     position: fixed;
@@ -11,7 +11,7 @@
     z-index: 999;
     background-color: var(--backgroundColor);
     width: 100vw;
-    box-shadow: 0px var(--size14) var(--size10) var(--shadowColor);
+    box-shadow: 0 var(--size14) var(--size10) var(--shadowColor);
 }
 
 .mainFilters button{
@@ -22,7 +22,7 @@
     height: 100%;
     width: 100%;
     border-bottom: var(--size13) solid transparent;
-    padding-bottom: var(--size11);
+    padding-bottom: var(--size12);
     gap: var(--size10);
     background-color: transparent;
     font-family: var(--mainFont);
@@ -48,12 +48,7 @@
 
 @media (max-aspect-ratio: 7/8) {
     .mainFilters {
-        height: var(--size8);
         gap: var(--size13);
-        padding: 0 var(--size9) var(--size14) var(--size9);
-    }
-
-    .mainFilters button{
-        padding-bottom: var(--size12);
+        padding: var(--size14) var(--size9) var(--size14) var(--size9);
     }
 }

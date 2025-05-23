@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import Header from './components/Header/Header.jsx'
-import MainFilters from './components/MainFilters/MainFilters.jsx'
-import Carrousel from './components/Carrousel/Carrousel.jsx'
-import Footer from './components/Footer/Footer.jsx'
+import { useState } from 'react';
+import Header from './components/Header/Header.jsx';
+import MainFilters from './components/MainFilters/MainFilters.jsx';
+import Carousel from './components/Carousel/Carousel.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import articleDataBase from './articleDataBase.json'
 import './App.css'
 
 function App() {
@@ -14,7 +14,12 @@ function App() {
       <Header/>
       <main>
         <MainFilters/>
-        <Carrousel carrouselTitle = "Destacados" actionCallText = "Ve la lista completa"/>
+        <Carousel
+          carouselTitle = "Destacados"
+          actionCallText = "Ve la lista completa"
+          actionCallLink="/eventos"
+          items = {articleDataBase}
+        />
       </main>
     </>
   )
