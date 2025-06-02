@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import reserboLogo from '../../assets/img/reserbo.svg';
 import menuIconWhite from '../../assets/icons/menuIconWhite.svg';
 import cartIconWhite from '../../assets/icons/cartIconWhite.svg';
@@ -15,9 +16,9 @@ function Header() {
     <>
         <header className={showMenu ? 'showHeaderList' : ''}>
             <nav>
-                <a href="index.html">
+                <Link to = {"/"}>
                     <img src={reserboLogo} alt="Logo de reserbo"/>
-                </a>
+                </Link>
                 <ul>
                     <div>
                         <button>
@@ -28,13 +29,13 @@ function Header() {
                         </button>
                     </div>
                     <li>
-                        <a href="nosotros.html">Nosotros</a>
+                        <Link to = {"/nosotros"}>Nosotros</Link>
                     </li>
                     <li>
-                        <a href="cartelera.html">Cartelera</a>
+                        <Link to = {"/cartelera"}>Cartelera</Link>
                     </li>
                     <li>
-                        <a href="directorio.html">Directorio</a>
+                        <Link to = {"/directorio"}>Directorio</Link>
                     </li>
                 </ul>
             </nav>

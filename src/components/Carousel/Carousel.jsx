@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Link } from "react-router-dom";
 import articleImgPlaceholder from '../../assets/img/reserboImgPlaceholder.png';
 import arrowForwardCircleIconBlack from '../../assets/icons/arrowForwardCircleIconBlack.svg';
 import './carousel.css';
@@ -15,22 +15,23 @@ function Carousel(props) {
 
     return (
     <>
-        <section class = "carousel">
+        <section className = "carousel">
             <h2>{carouselTitle}</h2>
             <ul>
-                {items.map(({ key, articleImg, articleName, articleMiniDescription, articleDetails }) => (
+                {items.map(({ key, articleImg, articleName, articleMiniDescription, articleDetails, type }) => (
                     <li key = {key}>
-                        <img src = {articleImg || articleImgPlaceholder}/>
-                        <h4>{articleName || "Próximamente"}</h4>
-                        <p>{articleMiniDescription || "Más info próximamente"}</p>
-                        <p>{articleDetails || "Detalles próximamente"}</p>
+                        <Link to={`/${type}/${key}`}>
+                            <img src = {articleImg || articleImgPlaceholder}/>
+                            <h4>{articleName || "Próximamente"}</h4>
+                            <p>{articleDetails || "Detalles próximamente"}</p>
+                        </Link>
                     </li>
                 ))}
             </ul>
-            <a href={actionCallLink}>
+            <Link className = "actionCall" to = { actionCallLink }>
                 {actionCallText}
                 <img src = {actionCallIcon}/>
-            </a>
+            </Link>
         </section>
     </>
     )

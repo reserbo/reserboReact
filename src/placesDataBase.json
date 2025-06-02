@@ -1,0 +1,23 @@
+[
+    {
+        "key": 1,
+        "articleImg": null,
+        "articleName": "cincodoce",
+        "articleMiniDescription": "Tu departamento favorito",
+        "articleDetails": "Florencia, Juárez"
+    },
+    {
+        "key": 2,
+        "articleImg": null,
+        "articleName": "Antro Juan",
+        "articleMiniDescription": "Sí",
+        "articleDetails": "Alvaro Obregon, Roma Nte"
+    },
+    {
+        "key": 3,
+        "articleImg": null,
+        "articleName": "La Purísima",
+        "articleMiniDescription": "Pelos, sobaco y degenere",
+        "articleDetails": "Republica de Cuba, Centro"
+    }
+]

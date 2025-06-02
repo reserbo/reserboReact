@@ -20,6 +20,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    font-weight: 400;
 }
 
 .carousel ul {
@@ -40,6 +41,7 @@
     justify-content: center;
     gap: var(--size13);
     height: 100%;
+    width: var(--size4);
 }
 
 .carousel ul li img {
@@ -48,7 +50,7 @@
     border-radius: .3rem;
 }
 
-.carousel a {
+.actionCall {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -66,6 +68,13 @@
     position: sticky;
     top: 0;
     left: 0;
+}
+
+.carousel ul li p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--grey);
 }
 
 @media (max-aspect-ratio: 7/8) {

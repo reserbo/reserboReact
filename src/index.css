@@ -25,18 +25,31 @@
   /* -- sizes -- */
   --phi: 1.61803398875;
   --size1: 100vh;
+  --size1and2avg: calc((var(--size1) + var(--size2)) / 2);
   --size2: calc(var(--size1) / var(--phi));
+  --size2and3avg: calc((var(--size2) + var(--size3)) / 2);
   --size3: calc(var(--size2) / var(--phi));
+  --size3and4avg: calc((var(--size3) + var(--size4)) / 2);
   --size4: calc(var(--size3) / var(--phi));
+  --size4and5avg: calc((var(--size4) + var(--size5)) / 2);
   --size5: calc(var(--size4) / var(--phi));
+  --size5and6avg: calc((var(--size5) + var(--size6)) / 2);
   --size6: calc(var(--size5) / var(--phi));
+  --size6and7avg: calc((var(--size6) + var(--size7)) / 2);
   --size7: calc(var(--size6) / var(--phi));
+  --size7and8avg: calc((var(--size7) + var(--size8)) / 2);
   --size8: calc(var(--size7) / var(--phi));
+  --size8and9avg: calc((var(--size8) + var(--size9)) / 2);
   --size9: calc(var(--size8) / var(--phi));
+  --size9and10avg: calc((var(--size9) + var(--size10)) / 2);
   --size10: calc(var(--size9) / var(--phi));
+  --size10and11avg: calc((var(--size10) + var(--size11)) / 2);
   --size11: calc(var(--size10) / var(--phi));
+  --size11and12avg: calc((var(--size11) + var(--size12)) / 2);
   --size12: calc(var(--size11) / var(--phi));
+  --size12and13avg: calc((var(--size12) + var(--size13)) / 2);
   --size13: calc(var(--size12) / var(--phi));
+  --size13and14avg: calc((var(--size13) + var(--size14)) / 2);
   --size14: calc(var(--size13) / var(--phi));
   --size3by2: calc(var(--size3) * 2);
   --size5by3: calc(var(--size5) * 3);
@@ -46,6 +59,7 @@
   --headerHeight: calc(var(--size7) + (var(--size10) * 2));
   --indexFiltersHeight: calc(var(--size14) + (var(--size8)));
 
+  --textDot5: calc(var(--text1) / var(--phi));
   --text1: 1rem;
   --text2: calc(var(--text1) * var(--phi));
   --text3: calc(var(--text2) * var(--phi));
@@ -75,6 +89,7 @@ body {
 main {
   box-sizing: border-box;
   padding-top: var(--headerHeight);
+  height: fit-content;
 }
 
 img {

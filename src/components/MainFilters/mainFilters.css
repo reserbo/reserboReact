@@ -2,8 +2,8 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content:space-evenly;
-    padding: var(--size14) var(--size8) var(--size14) var(--size8);
-    height: var(--size8);
+    padding: 0 var(--size8);
+    height: var(--size7and8avg);
     gap: var(--size9);
     position: fixed;
     width: 100%;
@@ -22,7 +22,7 @@
     height: 100%;
     width: 100%;
     border-bottom: var(--size13) solid transparent;
-    padding-bottom: var(--size12);
+    padding: var(--size11and12avg) 0;
     gap: var(--size10);
     background-color: transparent;
     font-family: var(--mainFont);
@@ -49,6 +49,5 @@
 @media (max-aspect-ratio: 7/8) {
     .mainFilters {
         gap: var(--size13);
-        padding: var(--size14) var(--size9) var(--size14) var(--size9);
     }
 }

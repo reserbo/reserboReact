@@ -5,8 +5,7 @@ import storeFrontIconBlack from '../../assets/icons/storeFrontIconBlack.svg';
 import storeFrontIconOutlineGrey from '../../assets/icons/storeFrontIconOutlineGrey.svg';
 import './mainFilters.css';
 
-function MainFilters() {
-    const [activeFilter, setActiveFilter] = useState('eventos');
+function MainFilters({activeFilter, setActiveFilter}) {
 
     const handleFilterClick = (filter) => {
         setActiveFilter(filter);
@@ -14,13 +13,13 @@ function MainFilters() {
 
     return (
     <>
-        <section class = "mainFilters">
-            <button className={activeFilter === 'eventos' ? 'indexhighlitedFilter' : ''} onClick={() => handleFilterClick('eventos')}>
-                <img src={activeFilter === 'eventos' ? ticketIconBlack : ticketIconOutlineGrey} alt="Ícono de evento"/>
+        <section className = "mainFilters">
+            <button className={activeFilter === 'events' ? 'indexhighlitedFilter' : ''} onClick={() => handleFilterClick('events')}>
+                <img src={activeFilter === 'events' ? ticketIconBlack : ticketIconOutlineGrey} alt="Ícono de evento"/>
                 <p>Eventos</p>
             </button>
-            <button className={activeFilter === 'lugares' ? 'indexhighlitedFilter' : ''} onClick={() => handleFilterClick('lugares')}>
-                <img src={activeFilter === 'lugares' ? storeFrontIconBlack : storeFrontIconOutlineGrey} alt="Ícono de lugar"/>
+            <button className={activeFilter === 'places' ? 'indexhighlitedFilter' : ''} onClick={() => handleFilterClick('places')}>
+                <img src={activeFilter === 'places' ? storeFrontIconBlack : storeFrontIconOutlineGrey} alt="Ícono de lugar"/>
                 <p>Lugares</p>
             </button>
         </section>
