@@ -3,7 +3,11 @@ import './footer.css';
 function Footer() {
     return (
     <>
-        <p>Footer</p>
+        <footer>
+            <p>©reserbo.com</p>
+            <p>@reserbo_</p>
+            <p>reserbomx@gmail.com</p>
+        </footer>
     </>
     )
 }

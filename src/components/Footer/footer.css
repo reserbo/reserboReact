@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    flex-flow: column;
+    background-color: var(--secondaryContainerColor);
+    height: var(--size4);
+    align-items: center;
+    justify-content: center;
+    gap: var(--size10);
+}
