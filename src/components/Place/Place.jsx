@@ -1,25 +1,53 @@
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { supabase } from "../../supabaseClient";
 import articleImgPlaceholder from '../../assets/img/reserboImgPlaceholder.png';
-import placesDataBase from '../../placesDataBase.json';
 
 function Place() {
+  const { id } = useParams();
+  const [place, setPlace] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-    const {id} = useParams();
+  useEffect(() => {
+    async function fetchPlace() {
+      const { data, error } = await supabase
+        .from('places')
+        .select('*')
+        .eq('id', id)
+        .single();
 
-    const place = placesDataBase.find(place=>place.key === parseInt(id))
+      if (error) {
+        console.error("Error fetching place:", error);
+        setPlace(null);
+      } else {
+        if (data.logo_path) {
+          const { data: imageUrlData } = supabase
+            .storage
+            .from('places-logos')
+            .getPublicUrl(data.logo_path);
 
-    if(!place) {
-        return <h2>Lugar no encontrado</h2>
+          data.articleImg = imageUrlData.publicUrl;
+        }
+
+        setPlace(data);
+      }
+      setLoading(false);
     }
 
-    return (
-      <>
-        <img src = {place.articleImg || articleImgPlaceholder}></img>
-        <h2>{place.articleName}</h2>
-        <h3>{place.articleMiniDescription}</h3>
-        <h3>Dirección: {place.articleDetails}</h3>
-      </>
-    )
-  }
-  
-  export default Place
+    fetchPlace();
+  }, [id]);
+
+  if (loading) return <h2>Cargando...</h2>;
+  if (!place) return <h2>Lugar no encontrado</h2>;
+
+  return (
+    <>
+      <img src={place.articleImg || articleImgPlaceholder} alt={place.articleName} />
+      <h2>{place.articleName}</h2>
+      <h3>{place.articleMiniDescription}</h3>
+      <h3>Dirección: {place.articleDetails}</h3>
+    </>
+  );
+}
+
+export default Place;
